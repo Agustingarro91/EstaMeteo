@@ -9,9 +9,7 @@ function App() {
   return (
     <Fragment>
         <Header/>
-      <Routes>
-          <Route path='/' element={<Home/>}/>
-      </Routes>
+         <Home/>
         <Footer/>
     </Fragment>
   )

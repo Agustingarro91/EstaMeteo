@@ -41,7 +41,8 @@ body {
   color: var(--text-color);
 }
 
-a {
+a {  
+  text-decoration: none;
   color: var(--link-color);
   transition: all 0.5s ease-out;
 }
@@ -90,6 +91,7 @@ p {
 }
 
 /* ********** Components ********** */
+
 
 /* ********** Carousel ********** */
 @keyframes carousel-slide {
@@ -164,6 +166,74 @@ p {
 #slide-3:checked ~ .slides-nav label#dot-3,
 #slide-4:checked ~ .slides-nav label#dot-4 {
   background-color: var(--gray-dark-color);
+}
+
+/* ********** Catalogo ********** */
+
+.catalogo-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.1px solid var(--gray-color);
+  margin: 1rem 2rem;  
+}
+
+.product-img{  
+  padding: 2rem 2rem 0;
+  width: 79%;
+}
+
+.catalogo-card>div{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-content{
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-footer{
+  justify-content: space-between;
+  text-align: center;
+}
+
+.product-footer>a{
+  flex-basis: 100%;
+  color: #000;
+  padding: 0.5rem;
+  height: 33px;
+  border-radius: 0.3rem;
+  border: 0.5px ridge var(--gray-dark-color) ;
+  background-color: #FFDF93;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & span {
+    flex-grow: 2;
+  }
+}
+
+.product-footer>span{
+  padding: 0.5rem;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+
+.catalogo-card>div>a:nth-child(2){
+  align-self: flex-end;
+}
+
+
+@media screen and (min-width: 768px) {
+
+
 }
 
 /* ********** Contact Form ********** */
@@ -467,7 +537,7 @@ progress::-moz-progress-bar {
   border-bottom: thin solid var(--first-color);
   margin: 2rem auto;
   padding: 0.5rem 1rem;
-  width: 400px;
+  width: 800px;
   text-align: center;
   color: var(--title-color);
 }
@@ -591,7 +661,7 @@ progress::-moz-progress-bar {
   padding: 1rem;
   background-color: var(--first-alpha-color);
   color: var(--white-color);
-  opacity: 0;
+  opacity: 0.5;
   pointer-events: none;
   transition: all 0.5s ease-in-out;
 }

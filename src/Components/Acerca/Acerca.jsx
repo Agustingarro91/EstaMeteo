@@ -42,7 +42,7 @@ const Acerca = () => {
       <article className="center-cont">
         <img
           className="gray-scale"
-          src="src/assets/profile-img8.jpg"
+          src="./assets/profile-img8.jpg"
           alt="jonmircha"
         />
       </article>
