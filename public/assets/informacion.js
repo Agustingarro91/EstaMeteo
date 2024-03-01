@@ -133,17 +133,95 @@ export const modal = [
 
 export const catalogo = [
   {
+    id:54154151,
     link: "amazon.com",
     nombre: "nombre del producto",
+    linkPrime: 'vaya a saber uno',
+    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
+    alt: 'ver de donde sale',
+    title:'otra cosamas que tenemos que ver',
     prime: false,
     precioTach: "200 $",
     precioNorm: "100 $",
   },
   {
+    id:5415415,
     link: "amazon.com",
     nombre: "nombre del producto",
-    prime: false,
+    linkPrime: 'vaya a saber uno',
+    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
+    alt: 'ver de donde sale',
+    title:'otra cosamas que tenemos que ver',
+    prime: true,
+    precioTach: "200 $",
+    precioNorm: "100 $",
+  },
+  {
+    id:5415415,
+    link: "amazon.com",
+    nombre: "nombre del producto",
+    linkPrime: 'vaya a saber uno',
+    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
+    alt: 'ver de donde sale',
+    title:'otra cosamas que tenemos que ver',
+    prime: true,
+    precioTach: "200 $",
+    precioNorm: "100 $",
+  },
+  {
+    id:5415415,
+    link: "amazon.com",
+    nombre: "nombre del producto",
+    linkPrime: 'vaya a saber uno',
+    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
+    alt: 'ver de donde sale',
+    title:'otra cosamas que tenemos que ver',
+    prime: true,
+    precioTach: "200 $",
+    precioNorm: "100 $",
+  },
+  {
+    id:5415415,
+    link: "amazon.com",
+    nombre: "nombre del producto",
+    linkPrime: 'vaya a saber uno',
+    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
+    alt: 'ver de donde sale',
+    title:'otra cosamas que tenemos que ver',
+    prime: true,
+    precioTach: "200 $",
+    precioNorm: "100 $",
+  },
+  {
+    id:5415415,
+    link: "amazon.com",
+    nombre: "nombre del producto",
+    linkPrime: 'vaya a saber uno',
+    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
+    alt: 'ver de donde sale',
+    title:'otra cosamas que tenemos que ver',
+    prime: true,
     precioTach: "200 $",
     precioNorm: "100 $",
   },
 ];
+
+
+export const cluster = [
+
+  {
+    link: 'amazon.com',
+    img: 'assets/hero-image-home2.jpg',
+    titulo: 'Tepro Toronto Click 2020: la mejor Barbacoa de carbón calidad-precio'
+  },
+  {
+    link: 'amazon.com',
+    img: 'assets/hero-image-home2.jpg',
+    titulo: 'Tepro Toronto Click 2020: la mejor Barbacoa de carbón '
+  },
+  {
+    link: 'amazon.com',
+    img: 'assets/hero-image-home2.jpg',
+    titulo: 'Tepro Toronto Click 2020:  Barbacoa de carbón calidad-precio'
+  }
+]

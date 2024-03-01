@@ -4,10 +4,16 @@ import Acerca from "../Acerca/Acerca.jsx";
 import Servicios from "../Servicios/Servicios.jsx";
 import Portfolio from "../Portfolio/Portfolio.jsx";
 import Modal from "../Modal/Modal.jsx";
-import { ventajas, desventajas, catalogo } from "../../../public/assets/informacion.js";
+import {
+  ventajas,
+  desventajas,
+  catalogo,
+  cluster,
+} from "../../../public/assets/informacion.js";
 import Contact from "../Contact/Contact.jsx";
 import { Helmet } from "react-helmet";
 import Catalogo from "../Catalogo/Catalogo.jsx";
+import Cluster from "../Cluster/Cluster.jsx";
 
 const Home = () => {
   return (
@@ -69,20 +75,25 @@ const Home = () => {
         classe={"home"}
       />
       <Portfolio />
-      <Acerca />
+      <Catalogo catalogo={catalogo} />
+
+      <section className="cluster container">
+        <h2>Las marcas mas baratas de estaciones meteorologicas</h2>
+        <p>Te mostramos las características y las mejores ofertas de estaciones meteorologicas de las principales marcas del sector.</p>
+        <Cluster cluster={cluster}/>
+      </section>
+      {/*       <Acerca />
       <Servicios title="Ventajassdfgsdg" arr={ventajas} />
       <Servicios title="Desventajas" arr={desventajas} />
-      <Modal />
-      <Hero
+      <Modal /> */}
+      {/*       <Hero
         image={"url('assets/hero-image-home.jpg')"}
         attachment={"scroll"}
         opacity={"var(--white-alpha-color)"}
         title={"var(--white-color)"}
         id={"testimonios"}
         classe={"testimonials"}
-      />
-      <Contact />
-      <Catalogo catalogo={catalogo}/>
+      /> */}
     </main>
   );
 };
