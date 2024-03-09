@@ -1,18 +1,16 @@
-import Home from './Components/Home/Home'
-import Header from './Components/Header/Header'
-import Footer from './Components/Footer/Footer'
-import {Routes, Route} from 'react-router-dom'
-import { Fragment } from 'react'
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
+import { Fragment } from "react";
+import Main from "./Components/Main/Main";
 
 function App() {
-
   return (
     <Fragment>
-        <Header/>
-         <Home/>
-        <Footer/>
+      <Header />
+      <Main/>     
+      <Footer />
     </Fragment>
-  )
+  );
 }
 
-export default App
+export default App;

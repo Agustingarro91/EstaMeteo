@@ -30,7 +30,8 @@ const CardCatalogo = ({ catalogo }) => {
       <div className="product-footer">
         <span className="line">{catalogo.precioTach}</span>
         <span>{catalogo.precioNorm}</span>
-        <a 
+        <a
+        className="btn-amzon" 
         href="amazon.com" 
         title="Comprar en Amazon"
         rel="nofollow noopener sponsored" 

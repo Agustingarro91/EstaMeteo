@@ -2,7 +2,7 @@ import { Fragment, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../../../index.css";
 import { useNavigate } from "react-router-dom";
-import { formu } from "../../../../public/assets/informacion";
+import { formu } from "../../../informacion";
 import Gracias from "./Gracias/Gracias";
 
 function Form() {

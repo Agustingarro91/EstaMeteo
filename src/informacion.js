@@ -1,3 +1,8 @@
+import { format  } from "@formkit/tempo"
+
+export const año = format(new Date(), "YYYY", "es")
+
+
 export const ventajas = [
   {
     title: "Programación Web 1 ",
@@ -83,27 +88,18 @@ export const formu = [
 
 export const portfolio = [
   {
-    title: "Proyecto Primero",
-    text: "primer proyecto",
-    trabajo: "trabajo-1",
-    image: "assets/portfolio.jpg",
+    title: "MISOL HP2550 Wi-Fi",
+    text: "",
+    link: "no-hay-todavia",
+    image: "http://www.misolweather.com/uploads/ueditor/20211125/65a678688861d51afd6085cb808ebbf9.jpg",
     alt: "Trabajo 1",
   },
-
   {
-    title: "Proyecto Segundo",
-    text: "primer proyecto",
-    trabajo: "trabajo-2",
-    image: "assets/portfolio.jpg",
-    alt: "Trabajo 2",
-  },
-
-  {
-    title: "Proyecto Tercero",
-    text: "primer proyecto",
-    trabajo: "trabajo-3",
-    image: "assets/portfolio.jpg",
-    alt: "Trabajo 3",
+    title: "Froggit HP1000SE PRO Wi-Fi  ",
+    text: "",
+    link: "no-hay-todavia",
+    image: "https://www.froggit.de/images/product_images/info_images/HP1000SE_PRO_Galerie.jpg",
+    alt: "Trabajo 1",
   },
 ];
 
@@ -133,7 +129,31 @@ export const modal = [
 
 export const catalogo = [
   {
-    id:54154151,
+    id:5415151,
+    link: "amazon.com",
+    nombre: "nombre del producto",
+    linkPrime: 'vaya a saber uno',
+    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
+    alt: 'ver de donde sale',
+    title:'otra cosamas que tenemos que ver',
+    prime: false,
+    precioTach: "200 $",
+    precioNorm: "100 $",
+  }, 
+   {
+    id:541151,
+    link: "amazon.com",
+    nombre: "nombre del producto",
+    linkPrime: 'vaya a saber uno',
+    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
+    alt: 'ver de donde sale',
+    title:'otra cosamas que tenemos que ver',
+    prime: false,
+    precioTach: "200 $",
+    precioNorm: "100 $",
+  },  
+  {
+    id:545151,
     link: "amazon.com",
     nombre: "nombre del producto",
     linkPrime: 'vaya a saber uno',
@@ -144,66 +164,6 @@ export const catalogo = [
     precioTach: "200 $",
     precioNorm: "100 $",
   },
-  {
-    id:5415415,
-    link: "amazon.com",
-    nombre: "nombre del producto",
-    linkPrime: 'vaya a saber uno',
-    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
-    alt: 'ver de donde sale',
-    title:'otra cosamas que tenemos que ver',
-    prime: true,
-    precioTach: "200 $",
-    precioNorm: "100 $",
-  },
-  {
-    id:5415415,
-    link: "amazon.com",
-    nombre: "nombre del producto",
-    linkPrime: 'vaya a saber uno',
-    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
-    alt: 'ver de donde sale',
-    title:'otra cosamas que tenemos que ver',
-    prime: true,
-    precioTach: "200 $",
-    precioNorm: "100 $",
-  },
-  {
-    id:5415415,
-    link: "amazon.com",
-    nombre: "nombre del producto",
-    linkPrime: 'vaya a saber uno',
-    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
-    alt: 'ver de donde sale',
-    title:'otra cosamas que tenemos que ver',
-    prime: true,
-    precioTach: "200 $",
-    precioNorm: "100 $",
-  },
-  {
-    id:5415415,
-    link: "amazon.com",
-    nombre: "nombre del producto",
-    linkPrime: 'vaya a saber uno',
-    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
-    alt: 'ver de donde sale',
-    title:'otra cosamas que tenemos que ver',
-    prime: true,
-    precioTach: "200 $",
-    precioNorm: "100 $",
-  },
-  {
-    id:5415415,
-    link: "amazon.com",
-    nombre: "nombre del producto",
-    linkPrime: 'vaya a saber uno',
-    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
-    alt: 'ver de donde sale',
-    title:'otra cosamas que tenemos que ver',
-    prime: true,
-    precioTach: "200 $",
-    precioNorm: "100 $",
-  },
 ];
 
 
@@ -211,17 +171,54 @@ export const cluster = [
 
   {
     link: 'amazon.com',
-    img: 'assets/hero-image-home2.jpg',
+    img: '/hero-image-home2.jpg',
     titulo: 'Tepro Toronto Click 2020: la mejor Barbacoa de carbón calidad-precio'
   },
   {
     link: 'amazon.com',
-    img: 'assets/hero-image-home2.jpg',
+    img: '/hero-image-home2.jpg',
     titulo: 'Tepro Toronto Click 2020: la mejor Barbacoa de carbón '
   },
   {
     link: 'amazon.com',
-    img: 'assets/hero-image-home2.jpg',
+    img: '/hero-image-home2.jpg',
     titulo: 'Tepro Toronto Click 2020:  Barbacoa de carbón calidad-precio'
   }
 ]
+
+
+
+export const producto = [
+  {
+    img:"https://m.media-amazon.com/images/I/41UYNi11UPL._SL160_.jpg",
+    title:"Weber - Barbacoa de gas Q1000 50060079, gris",
+    caracteristicas:[
+      "probando 1", "probando 2"
+    ],
+    precioNor:200,
+    precioTach:300,
+    link: "amazon.com"
+  }
+  
+]
+
+
+
+export const marcas = [
+ {marca:"Misol", link:"todavia no lo tengo"}, 
+  {marca:"Froggit", link:"todavia no lo tengo"},
+]
+
+
+export const tipos = [
+  {tipo: "Wifi", link: "/wifi"}, 
+   {tipo:"Profesional", link: "/profesional"}, 
+   {tipo:"Inalambrica", link: "/inalambrica"},
+   {tipo:"Portatil", link: "/portatil"}, 
+
+ ]
+
+ export const reseñas = [
+  {reseña: "Froggit HP1000SE PRO Wi-Fi", link: "/froggit-hp-1000-se-pro-wifi"  }, 
+  {reseña: "MISOL HP2550 Wi-Fi", link: "/misol-hp-2550-wifi"}, 
+ ]

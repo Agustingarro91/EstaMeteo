@@ -1,13 +1,14 @@
 import { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 
-const CartPortfolio = ({title, text, trabajo, image, alt}) => {
+const CartPortfolio = ({title, text, link, image, alt}) => {
 
 
 
   return (
     <Fragment>
-      <a href={`#${trabajo}`} className="portfolio-card">
-        <img src={`${image}`} alt={`${alt}`} />
+      <NavLink to={`${link}`} className="portfolio-card">
+        <img  src={`${image}`} alt={`${alt}`} />
         <aside className="portfolio-card-info">
           <div>
             <h3>{`${title}`}</h3>
@@ -16,7 +17,7 @@ const CartPortfolio = ({title, text, trabajo, image, alt}) => {
             </p>
           </div>
         </aside>
-      </a>
+      </NavLink>
     </Fragment>
   );
 };

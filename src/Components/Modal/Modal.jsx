@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import CardModal from "./CardModal";
-import { modal } from "../../../public/assets/informacion";
+import { modal } from "../../informacion";
 
 const Modal = () => {
 
