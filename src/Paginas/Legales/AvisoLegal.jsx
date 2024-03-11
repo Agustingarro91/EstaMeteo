@@ -63,7 +63,7 @@ const AvisoLegal = () => {
             responsabilidad y titularidad del dominio web {dominio}, así como
             las redes sociales y el sitio web asociadas, en lo adelante el
             “sitio web” le pertenecen a Alejandro Agustin Diaz Garro, DNI
-            35838136 , con domicilio en Mendoza, Ciudad, Argentina, en lo
+            35838136, con domicilio en Mendoza, Ciudad, Argentina, en lo
             adelante EL GESTOR DEL SITIO WEB, y cuyo correo electrónico de
             contacto es {correoElectronico}.
           </p>
@@ -246,9 +246,9 @@ const AvisoLegal = () => {
             El usuario o el cliente podrá escribir a {correoElectronico} para
             resolver cualquier problema que tenga con el sitio web o con el
             servicio prestado. También podrá utilizar la plataforma europea de
-            Resolución de Litigios en Línea{" "}
-            <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage">
-              aquí
+            Resolución de Litigios en Línea
+            <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage" target="_blank">
+             <strong> aquí</strong> 
             </a>
           </p>
         </article>

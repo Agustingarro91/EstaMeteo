@@ -8,6 +8,7 @@ import Profesional from "../../Paginas/Categorias/Profesional";
 import Inalambrica from "../../Paginas/Categorias/Inalambrica";
 import Portatil from "../../Paginas/Categorias/Portatil";
 import AvisoLegal from "../../Paginas/Legales/AvisoLegal";
+import PoliticasDePrivacidad from "../../Paginas/Legales/PoliticasDePrivacidad";
 
 const Main = () => {
   return (
@@ -32,6 +33,7 @@ const Main = () => {
 
         {/* Legales */}
         <Route path="/aviso-legal" element={<AvisoLegal />} />
+        <Route path="/politicas-de-privacidad" element={<PoliticasDePrivacidad />} />
         
 
         {/* Error */}
