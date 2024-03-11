@@ -452,6 +452,25 @@ p {
   font-size: 7.5vw;
 }
 
+/* ********** Legales ********** */
+
+.legales>*{
+  padding: 1rem;
+
+  & >*{
+    padding: 0.5rem;
+
+    > li{
+      padding: 0.3rem;
+    }
+  }
+}
+
+.legales h1,h2{
+  text-align: center;
+}
+
+
 /* ********** Menu ********** */
 .menu-btn {
   outline: thin solid var(--first-color);

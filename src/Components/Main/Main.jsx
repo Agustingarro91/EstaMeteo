@@ -7,6 +7,7 @@ import MisolHp2550Wifi from "../../Paginas/TSR/MisolHp2550Wifi";
 import Profesional from "../../Paginas/Categorias/Profesional";
 import Inalambrica from "../../Paginas/Categorias/Inalambrica";
 import Portatil from "../../Paginas/Categorias/Portatil";
+import AvisoLegal from "../../Paginas/Legales/AvisoLegal";
 
 const Main = () => {
   return (
@@ -29,8 +30,12 @@ const Main = () => {
         />
         <Route path="/misol-hp-2550-wifi" element={<MisolHp2550Wifi />} />
 
+        {/* Legales */}
+        <Route path="/aviso-legal" element={<AvisoLegal />} />
+        
+
         {/* Error */}
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<h1>Error</h1>} />
 
       </Routes>
     </main>
