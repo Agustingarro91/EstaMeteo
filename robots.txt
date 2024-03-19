@@ -7,4 +7,4 @@ Disallow: /#/politicas-de-cookies
 Allow: /#/
 Allow: /#/froggit-hp-1000-se-pro-wifi
 
-#Sitemap:
+Sitemap: https://estacionmeteorologica.top/sitemap_index.xml
