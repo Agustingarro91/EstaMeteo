@@ -7,6 +7,7 @@ const PoliticasDePrivacidad = () => {
   return (
     <Fragment>
       <Helmet>
+      <meta name="robots" content="noindex, nofollow"></meta>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"

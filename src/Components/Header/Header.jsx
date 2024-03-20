@@ -27,9 +27,9 @@ const Header = () => {
               marcas: false,
               tipos: false,
             })
-          }       to="/">Weather Station</NavLink>
+          }       to="/">Est Meteo</NavLink>
         </div>
-        <button
+{/*         <button
           className="menu-btn"
           onClick={() =>
             setButton({
@@ -61,6 +61,19 @@ const Header = () => {
           </svg>
         </button>
         <nav className={`${button.btn ? "menu is-active" : "menu"}`}>
+        <NavLink   
+          onClick={() =>
+            setButton({
+              btn:false,
+              reseñas: false,
+              marcas: false,
+              tipos: false,
+            })
+          }        
+            to="/"
+          >
+            Inicio
+          </NavLink>
           <div
             onClick={() =>
               setButton({
@@ -152,7 +165,8 @@ const Header = () => {
           >
             Contacto
           </NavLink>
-        </nav>
+
+        </nav> */}
       </section>
     </header>
   );

@@ -9,20 +9,19 @@ import Inalambrica from "../../Paginas/Categorias/Inalambrica";
 import Portatil from "../../Paginas/Categorias/Portatil";
 import AvisoLegal from "../../Paginas/Legales/AvisoLegal";
 import PoliticasDePrivacidad from "../../Paginas/Legales/PoliticasDePrivacidad";
+import PoliticasDeCookies from "../../Paginas/Legales/PoliticasDeCookies";
+import Error from "../Error/Error";
+import Modals from "../Modal/Modals";
 
 const Main = () => {
   return (
     <main>
+      <Modals/>
       <Routes>
+        
         {/* Generales */}
         <Route path="/" element={<Home />} />
         <Route path="/contacto" element={<Contact />} />
-
-        {/* Categorias */}
-        <Route exact path="/wifi" element={<Wifi />} />
-        <Route exact path="/profesional" element={<Profesional />} />
-        <Route path="/inalambrica" element={<Inalambrica />} />
-        <Route path="/portatil" element={<Portatil />} />
 
         {/* TSR */}
         <Route
@@ -31,13 +30,21 @@ const Main = () => {
         />
         <Route path="/misol-hp-2550-wifi" element={<MisolHp2550Wifi />} />
 
+        {/* Categorias */}
+        <Route exact path="/wifi" element={<Wifi />} />
+        <Route exact path="/profesional" element={<Profesional />} />
+        <Route path="/inalambrica" element={<Inalambrica />} />
+        <Route path="/portatil" element={<Portatil />} />
+
+
         {/* Legales */}
         <Route path="/aviso-legal" element={<AvisoLegal />} />
         <Route path="/politicas-de-privacidad" element={<PoliticasDePrivacidad />} />
+        <Route path="/politicas-de-cookies" element={<PoliticasDeCookies />} />
         
 
         {/* Error */}
-        <Route path="*" element={<h1>Error</h1>} />
+        <Route path="*" element={<Error/>} />
 
       </Routes>
     </main>

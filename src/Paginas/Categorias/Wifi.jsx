@@ -59,7 +59,7 @@ const Wifi = () => {
       </Helmet>
 
       <Hero
-        image={"url('/hero-image-home.jpg')"}
+        image={"url('hero-image-home.jpg')"}
         attachment={"fixed"}
         id={"inicio"}
       >

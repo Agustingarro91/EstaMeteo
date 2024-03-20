@@ -1,7 +1,5 @@
 import { Fragment, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import "../../../index.css";
-import { useNavigate } from "react-router-dom";
 import { formu } from "../../../informacion";
 import Gracias from "./Gracias/Gracias";
 
@@ -69,7 +67,7 @@ function Form() {
         })}
 
         <div className={`contact-form-loader text-center ${btn && "none"}`}>
-          <img src="/assets/loader.svg" alt="Enviando..." />
+          <img src="loader.svg" alt="Enviando..." />
         </div>
       </form>
       <Gracias error={email}/>

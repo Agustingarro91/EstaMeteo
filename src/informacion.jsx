@@ -87,17 +87,17 @@ export const formu = [
 ];
 
 export const portfolio = [
-  {
+/*   {
     title: "MISOL HP2550 Wi-Fi",
     text: "",
-    link: "no-hay-todavia",
+    link: "/froggit-hp-1000-se-pro-wifi",
     image: "http://www.misolweather.com/uploads/ueditor/20211125/65a678688861d51afd6085cb808ebbf9.jpg",
     alt: "Trabajo 1",
-  },
+  }, */
   {
     title: "Froggit HP1000SE PRO Wi-Fi  ",
     text: "",
-    link: "no-hay-todavia",
+    link: "/froggit-hp-1000-se-pro-wifi",
     image: "https://www.froggit.de/images/product_images/info_images/HP1000SE_PRO_Galerie.jpg",
     alt: "Trabajo 1",
   },
@@ -166,26 +166,44 @@ export const catalogo = [
   },
 ];
 
-
+/* Cluster */
 export const cluster = [
-
   {
-    link: 'amazon.com',
-    img: '/hero-image-home2.jpg',
-    titulo: 'Tepro Toronto Click 2020: la mejor Barbacoa de carbón calidad-precio'
+    link: 'froggit-hp-1000-se-pro-wifi',
+    img: 'https://www.froggit.de/images/product_images/info_images/HP1000SE_PRO_Galerie.jpg',
+    titulo: 'Froggit HP1000SE PRO Wi-Fi'
   },
-  {
-    link: 'amazon.com',
-    img: '/hero-image-home2.jpg',
-    titulo: 'Tepro Toronto Click 2020: la mejor Barbacoa de carbón '
-  },
-  {
-    link: 'amazon.com',
-    img: '/hero-image-home2.jpg',
-    titulo: 'Tepro Toronto Click 2020:  Barbacoa de carbón calidad-precio'
-  }
 ]
 
+export const clusterMarcas = [
+
+  {
+    link: '#',
+    img: 'MarcaFroggit-390x200.jpg',
+    titulo: 'Estación Merteorologica Froggit '
+  },
+  {
+    link: '#',
+    img: 'MarcaMisol-390x200.jpg',
+    titulo: 'Estación Merteorologica Misol '
+  },
+  {
+    link: '#',
+    img: 'MarcaDavis-390x200.jpg',
+    titulo: 'Estación Merteorologica Davis '
+  },
+]
+
+export const clusterTipos = [
+
+  {
+    link: '#',
+    img: 'EstacionInalambrica.jpg',
+    titulo: 'Estación Merteorologica Inalambrica '
+  },
+]
+
+/*  Fin Cluster */
 
 
 export const producto = [
@@ -203,7 +221,7 @@ export const producto = [
 ]
 
 
-
+/* Header Links */
 export const marcas = [
  {marca:"Misol", link:"todavia no lo tengo"}, 
   {marca:"Froggit", link:"todavia no lo tengo"},
@@ -221,4 +239,13 @@ export const tipos = [
  export const reseñas = [
   {reseña: "Froggit HP1000SE PRO Wi-Fi", link: "/froggit-hp-1000-se-pro-wifi"  }, 
   {reseña: "MISOL HP2550 Wi-Fi", link: "/misol-hp-2550-wifi"}, 
+ ]
+
+
+ export const opiniones = [
+  {
+    opinion: <p>Opinion &#128525; </p>,
+    link: "/estamos yendo",
+    texto: "Dejame de joderrrr"
+  },
  ]

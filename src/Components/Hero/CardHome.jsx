@@ -9,9 +9,9 @@ const CardHome = ({children}) => {
     <aside className={`hero-image-opacity hero-image-opacity-home`}>
       <div className="hero-image-content">
         {children}
-        <a href="#contacto" className="btn">
+        {/* <a href="#contacto" className="btn">
           BUSCAR EN AMAZON
-        </a>
+        </a> */}
       </div>
     </aside>
   );

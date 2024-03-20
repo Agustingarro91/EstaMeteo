@@ -96,6 +96,8 @@ p {
 
 /* ********** Articulos TSR ********** */
 
+
+
 .section-article {
   margin-top: 2rem;
   display: grid;
@@ -110,6 +112,10 @@ p {
   gap: 1rem;
 }
 
+.section-hero{
+  height: 100vh;
+}
+
 .item-a {
   grid-area: titleh1;
 }
@@ -119,7 +125,7 @@ p {
 }
 .item-c {
   grid-area: titleh2;
-  align-self: end;
+  align-self: center;
 }
 .item-d {
   grid-area: paragraph;
@@ -134,9 +140,15 @@ p {
     grid-template-areas:
       "titleh1 img"
       "titleh2 img "
-      "titleh2 img"
-      "paragraph paragraph "
-      "btn .  ";
+      "paragraph img "
+      "btn img  ";
+
+      height: 100%;
+      align-content: space-evenly;  
+  }
+
+  .tsrHeader{
+    height: calc( 100vh - var(--header-height) - 32px);
   }
 }
 
@@ -147,6 +159,38 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+/*********** Caracteristicas***********/
+
+.caracteristicas {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+
+  & ul{
+    padding: 1rem;
+
+    & h3{
+      display: inline-block;
+    }
+    
+    & li{
+      margin-left: 3rem;
+      line-height: 2rem;
+    }
+  }
+
+  .caracteristicas-aside{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
 }
 
 /* ********** Carousel ********** */
@@ -325,10 +369,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 2rem;
+  border-radius: 1rem;
   & img {
     max-width: 100%;
     border-radius: 1.8rem 1.8rem 0 0;
+    border-bottom: 1px solid var(--gray-color);
   }
   & h3 {
     margin: 0.3rem;
@@ -448,6 +493,10 @@ p {
   color: var(--white-color);
 }
 
+.hero-image-opacity-customer {
+  background-color: var(--carousel-bg-color);
+}
+
 .hero-image-title {
   font-size: 7.5vw;
 }
@@ -456,19 +505,31 @@ p {
 
 .legales>*{
   padding: 1rem;
-
+  
   & >*{
     padding: 0.5rem;
-
+    
     > li{
       padding: 0.3rem;
     }
   }
+  
 }
 
 .legales h1,h2{
   text-align: center;
 }
+
+/* ********** Error ********** */
+
+.error{
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+
 
 
 /* ********** Menu ********** */
@@ -615,18 +676,63 @@ p {
 }
 
 
+}
 
 
+/* *******Probando Modal******** */
 
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
 
+.modal-container {
+  position: relative;
+  padding: 1rem;
+  max-width: 60%;
+  min-height: 200px;
+  max-height: 600px;
+  overflow-y: auto;
+  background-color: #fff;
 
+  & > div{
+    display: flex;
+    justify-content: space-around;
+    & > div {
+      cursor: pointer;
+    }
+  }
+}
 
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
 
+.modal.is-open {
+  display: flex;
+}
 
-
+.modal-float{
+  position: fixed;
+  left: 45%;
+  top:0;
+  z-index: 999;
 }
 
 /* ********** Modal ********** */
+
+/* 
+
 .modal {
   position: fixed;
   z-index: 999;
@@ -662,7 +768,7 @@ p {
 .modal[id|="trabajo"]:target {
   opacity: 1;
   pointer-events: auto;
-}
+} */
 
 /* ********** Product ********** */
 
@@ -759,6 +865,10 @@ progress::-moz-progress-bar {
   text-decoration: none;
   color: var(--white-color);
   background-color: var(--first-color);
+}
+
+.btn.amazon{
+  background-color: #ffa54b;
 }
 
 .container {
@@ -860,12 +970,25 @@ progress::-moz-progress-bar {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: var(--header-height);
   padding: 0.5rem;
-  text-align: center;
   color: var(--white-color);
   background-color: var(--third-color);
+  & a{
+    color: var(--white-color);
+    display: flex;
+    align-items: end;
+  }
+  & address{
+    display: flex;
+    flex-direction: column;
+  }
 }
+
+
+
 
 .header {
   position: fixed;
@@ -1056,3 +1179,5 @@ progress::-moz-progress-bar {
     grid-column: span 3;
   }
 }
+
+

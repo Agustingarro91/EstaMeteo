@@ -57,7 +57,27 @@ const MisolHp2550Wifi = () => {
         />
       </Helmet>
 
-      <HeaderArticle />
+      <HeaderArticle >
+      <h1 className="item-a">Froggit HP1000SE PRO Wi-Fi - Estación meteorológica inalámbrica por Internet, LCD</h1>
+        <img
+            className="item-b"
+          src="https://barbacoas.online/wp-content/uploads/2021/09/weber-pulse.jpg"
+          alt=""
+        />
+        <h2 className="item-c">
+          La reinvención de la auténtica parrilla, ahora en formato eléctrico.
+          Primera en su categoría, ha llegado para revolucionar las técnicas
+          culinarias.
+        </h2>
+        <p className="item-d">
+          Con el buen tiempo y la época estival, llega el momento para disfrutar
+          de las barbacoas. Por esto, te traemos la primera barbacoa eléctrica
+          del mercado: Weber pulse 1000 (ver en Amazon) Ha llegado con fuerzas
+          para quedarse. ¿Quieres saber qué es lo que encanta a los usuarios?
+          ¡Te desvelamos todos sus secretos!
+        </p>
+        <a href="" className="item-e btn-amzon">Ver ofertas de el ARTICULO en Amazon </a>
+      </HeaderArticle>
       <Catalogo>
         <h2 className="section-title">
           Catalogo de Estaciones Meteorologicas al mejor precio

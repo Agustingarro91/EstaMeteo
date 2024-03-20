@@ -1,26 +1,17 @@
-import { Fragment } from "react";
-import CardModal from "./CardModal";
-import { modal } from "../../informacion";
 
-const Modal = () => {
-
-    
-  return (
-    <Fragment>
-        {modal.map((modal) => {
-          return (
-            <CardModal
-              key={modal.title}
-              title={modal.title}
-              text={modal.text}
-              id={modal.id}
-              image={modal.image}
-              alt={modal.alt}
-            />
-          );
-        })}
-    </Fragment>
-  );
-};
-
-export default Modal;
+const Modal = ({ children, isOpen, closeModal }) => {
+    const handleModalContainerClick = (e) => e.stopPropagation();
+  
+    return (
+      <article className={`modal ${isOpen && "is-open"}`} onClick={closeModal}>
+        <div className="modal-container" onClick={handleModalContainerClick}>
+          <button className="modal-close" onClick={closeModal}>
+            X
+          </button>
+          {children}
+        </div>
+      </article>
+    );
+  };
+  
+  export default Modal;

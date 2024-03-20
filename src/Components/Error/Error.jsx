@@ -1,16 +1,11 @@
 import { Fragment } from "react";
-import { catalogo, cluster } from "../../informacion";
 import { Helmet } from "react-helmet";
-import Hero from "../../Components/Hero/Hero";
-import Catalogo from "../../Components/Catalogo/Catalogo";
-import Cluster from "../../Components/Cluster/Cluster";
-import CardHome from "../../Components/Hero/CardHome";
-import CardCatalogo from "../../Components/Catalogo/CardCatalogo";
 
-const Profesional = () => {
+const Error = () => {
   return (
     <Fragment>
       <Helmet>
+        <meta name="robots" content="noindex, nofollow"></meta>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -57,42 +52,13 @@ const Profesional = () => {
           content="https://jonmircha.github.io/youtube-taller-maquetacion/portafolio-cv"
         />
       </Helmet>
+      <section className="error container">
+            <h1>Error 404</h1>
+            <h2>Pagina no encontra</h2>
 
-      <Hero
-        image={"url('hero-image-home.jpg')"}
-        attachment={"fixed"}
-        id={"inicio"}
-      >
-        <CardHome  >
-        <h1 className="hero-image-title" >
-        Estaciones <br /> Profesional
-        </h1>
-        </CardHome>
-      </Hero>
-
-      <Catalogo>
-        <h2 className="section-title">
-          Catalogo de Estaciones Meteorologicas al mejor precio
-        </h2>
-        <article className="catalogo ">
-          {catalogo.map((catalogo) => (
-            <CardCatalogo key={catalogo.id} catalogo={catalogo} />
-          ))}
-        </article>
-      </Catalogo>
-
-      <section className="cluster container">
-        <h2 className="section-title">
-          Las marcas mas baratas de estaciones meteorologicas
-        </h2>
-        <p>
-          Te mostramos las características y las mejores ofertas de estaciones
-          meteorologicas de las principales marcas del sector.
-        </p>
-        <Cluster cluster={cluster} />
       </section>
     </Fragment>
   );
 };
 
-export default Profesional;
+export default Error;

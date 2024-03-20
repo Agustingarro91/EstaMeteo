@@ -1,15 +1,16 @@
 import { Fragment } from "react";
 import { Helmet } from "react-helmet";
-import { catalogo, cluster } from "../../informacion";
-import Cluster from "../../Components/Cluster/Cluster";
-import Catalogo from "../../Components/Catalogo/Catalogo";
-import CardCatalogo from "../../Components/Catalogo/CardCatalogo";
+import { catalogo, cluster, opiniones } from "../../informacion";
 import HeaderArticle from "../../Components/HeaderArticle/HeaderArticle";
 
 const FroggitHP1000Wifi = () => {
   return (
     <Fragment>
       <Helmet>
+      <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        ></meta>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -18,18 +19,20 @@ const FroggitHP1000Wifi = () => {
 
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-        <title>Agustin Diaz Garro</title>
+        <title>
+          {" "}
+          Froggit HP1000SE PRO Wi-Fi - Estación meteorológica inalámbrica
+        </title>
 
-        <meta name="description" content="Estamos cerca de lgrarlo" />
+        <meta
+          name="description"
+          content="Froggit HP1000SE PRO Wi-Fi | Te contamos todo sobre esta central meteorologia inalambrica. Ingresa y enterate de todo lo que tiene"
+        />
 
         <link rel="canonical" href="./" />
 
         <link rel="favicon" href="/favicon.svg" />
-        <link
-          rel="apple-touch-icon"
-          href="https://jonmircha.github.io/youtube-taller-maquetacion/portafolio-cv/assets/favicon.png"
-        />
-        <meta name="theme-color" content="#d9006" />
+        {/* <meta name="theme-color" content="#d9006" /> */}
         {/* Nos deja cambiar el color del navegador */}
 
         {/* Metas para Redes sociales */}
@@ -38,46 +41,161 @@ const FroggitHP1000Wifi = () => {
         <meta
           property="og:title"
           name="twitter:title"
-          content="Agustin Diaz Garro"
+          content="Froggit HP1000SE PRO Wi-Fi - Estación meteorológica inalámbrica"
         />
         <meta
           property="og:description"
           name="twitter:description"
-          content="Hola bienvenid@ a mi Portafolio Profesional, soy Jonathan MirCha, Desarrollador Web"
+          content="Froggit HP1000SE PRO Wi-Fi - Estación meteorológica inalámbrica"
         />
         <meta
           property="og:image"
           name="twitter:image"
-          content="https://jonmircha.github.io/youtube-taller-maquetacion/portafolio-cv/assets/hero-image-home.jpg"
+          content="imagendelproducto.jpg"
         />
         <meta
           property="og:url"
           name="twitter:url"
-          content="https://jonmircha.github.io/youtube-taller-maquetacion/portafolio-cv"
+          content="./froggit-hp-1000-se-pro-wifi"
         />
       </Helmet>
 
-      <HeaderArticle />
-      <Catalogo>
-        <h2 className="section-title">
-          Catalogo de Estaciones Meteorologicas al mejor precio
+      <HeaderArticle>
+        <h1 className="item-a" id="inicio">
+          Froggit HP1000SE PRO Wi-Fi - Estación meteorológica inalámbrica
+        </h1>
+        <img
+          className="item-b"
+          src="https://m.media-amazon.com/images/I/51wVL4nP6bL._SX466_.jpg"
+          alt="Froggit HP1000SE PRO Wi-Fi - Estación meteorológica inalámbrica"
+        />
+        <h2 className="item-c">
+          Flamante y avanzada unidad de visualización con pantalla a color y
+          nueva interfaz de usuario
         </h2>
-        <article className="catalogo ">
-          {catalogo.map((catalogo) => (
-            <CardCatalogo key={catalogo.id} catalogo={catalogo} />
-          ))}
-        </article>
-      </Catalogo>
+        <p className="item-d">
+          La central meteorologica Froggit HP1000SE PRO surgio como una novedosa
+          herramienta para la medicion climatica alla por el año 2019, pero al
+          pasar el tiempo se convirtio en la mas deseada por los fanaticos de
+          las centrales climatologicas debido a las impresionantes
+          caracteristicas que tiene. ¿Quieres saber qué es lo que encanta a los
+          usuarios? ¡Te desvelamos todos sus secretos!
+        </p>
+{/*         <a href="" className="item-e btn amazon">
+          Ver ofertas Froggit HP1000SE PRO en Amazon
+        </a> */}
+      </HeaderArticle>
 
-      <section className="cluster container">
+      <section  className="container caracteristicas">
         <h2 className="section-title">
-          Las marcas mas baratas de estaciones meteorologicas
+          Caracteristicas de la estacion climatologica Froggit HP1000SE PRO
+          Wi-Fi
+        </h2>
+
+        <ul>
+          <li>
+            Con el chip de red inalámbrica integrado, tienes la capacidad de
+            enviar tus datos meteorológicos a diferentes servidores
+            meteorológicos tales como: <br />
+            <ul>
+              <li>
+                Ecowitt.net (transmisión de los valores medidos de todos los
+                sensores conectados)
+              </li>
+              <li>Wunderground (solo valores medidos en exteriores)</li>
+              <li>Weathercloud (solo valores medidos en exteriores)</li>
+              <li>WOW (solo valores medidos en exteriores)</li>
+              <li>
+                Servidores personalizados (solo valores medidos en exteriores)
+              </li>
+            </ul>
+          </li>
+          <li>Ajustar los valores de las alarmas de manera individual.</li>
+          <li>
+            Con el HP1000SE PRO siempre tendrá a la vista su propio microclima
+            gracias a la gran cantidad de sensores.
+          </li>
+          <li>
+            Comprobacion del clima interior: conexión de hasta 8 sensores
+            inalámbricos de temperatura y humedad del aire (froggit DP50),
+            conexión de hasta 8 sensores inalámbricos para controlar la humedad
+            del suelo (froggit DP100), conexión de hasta 4 sensores inalámbricos
+            para medición de polvo fino PM 2,5 (froggit DP200).
+          </li>
+          <li>Visualización gráfica de los datos históricos.</li>
+          <li>Tipo de pantalla: LCD</li>
+          <li>
+            Idiomas con los que puedes configurar la pantalla: alemán, inglés,
+            francés, italiano, español, holandés.
+          </li>
+        </ul>
+      </section>
+
+      <section className="container caracteristicas">
+        <h2 className="section-title">
+          Ventajas de la central meteorologica Froggit HP1000SE PRO Wi-Fi
+        </h2>
+        <ul>
+          <li>
+            Pantalla de 7" a color con gran cantidad de informacion para evaluar
+            de una sola vez
+          </li>
+          <li>
+            Diferentes datos meteorologicos:
+            <ol>
+              <li>Dirección del viento </li>
+              <li>Velocidad del viento</li>
+              <li>Precipitaciones</li>
+              <li>Temperatura ambiente</li>
+              <li>Humedad ambiente</li>
+              <li>Presión atmosférica</li>
+              <li>Radiación solar</li>
+              <li>índice UV</li>
+            </ol>
+          </li>
+          <li>Poder instalar sensores extras y obtener sus variables</li>
+          <li>
+            Transferir los datos a la nube y consultarlos desde donde querramos
+          </li>
+          <li>
+            La sensillez con la que podemos instalar nuestra central
+            meteorologica
+          </li>
+        </ul>
+      </section>
+
+      <section className="container caracteristicas">
+        <h2 className="section-title">
+          Otros beneficios de la estacion meteorologica
         </h2>
         <p>
-          Te mostramos las características y las mejores ofertas de estaciones
-          meteorologicas de las principales marcas del sector.
+          Lo mejor de esta esta estacion es que contiene una pantalla dinamica a
+          color en donde podemos ver las tablas y graficas de todas las
+          variables que hayamos medido. <br />
+          <br />Y no solo eso, ademas tenemos la posibilidad de tener el
+          firmware siempre lo mas actualizado desde Ecowitt y asi poder reparar
+          cualquier error del programa base.
         </p>
-        <Cluster cluster={cluster} />
+      </section>
+      <section className="container caracteristicas">
+        <h2 className="section-title">
+          Conoce las Opiniones de Froggit HP1000SE PRO Wi-Fi
+        </h2>
+        {/* {opiniones.map((opinion,i) => {
+
+          return(
+        <aside key={i} className="caracteristicas-aside">
+          {opinion.opinion}
+          <blockquote>
+            <p>
+              <em> {opinion.texto} </em>
+            </p>
+          </blockquote>
+          <a href= {opinion.link} className="btn"> Ver en amazon</a>
+        </aside>
+          )
+
+        })} */}
       </section>
     </Fragment>
   );

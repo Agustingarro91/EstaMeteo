@@ -1,13 +1,15 @@
+import { NavLink } from "react-router-dom";
+
 const CardCluster = ({ link, img, titulo }) => {
   return (
-    <a href={link}className="card-cluster">
+    <NavLink to={link} className="card-cluster">
       
-        <img src={img} alt="" />
+        <img src={img} alt={titulo} />
         <h3>
           {titulo}
         </h3>
       
-    </a>
+    </NavLink>
   );
 };
 
