@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../../index.css";
 import { marcas, reseñas, tipos } from "../../informacion";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [button, setButton] = useState({
@@ -11,6 +11,10 @@ const Header = () => {
     reseñas: false,
     subMenu: false,
   });
+
+  const urlLocal = useLocation()
+
+  console.log(urlLocal);
 
 
 
@@ -29,7 +33,7 @@ const Header = () => {
             })
           }       to="/">Est Meteo</NavLink>
         </div>
-{/*         <button
+        <button
           className="menu-btn"
           onClick={() =>
             setButton({
@@ -61,7 +65,7 @@ const Header = () => {
           </svg>
         </button>
         <nav className={`${button.btn ? "menu is-active" : "menu"}`}>
-        <NavLink   
+        {urlLocal.pathname !== '/' && <NavLink   
           onClick={() =>
             setButton({
               btn:false,
@@ -73,8 +77,8 @@ const Header = () => {
             to="/"
           >
             Inicio
-          </NavLink>
-          <div
+          </NavLink>}
+{/*           <div
             onClick={() =>
               setButton({
                 ...button,
@@ -98,8 +102,8 @@ const Header = () => {
                 );
               })}
             </div>
-          </div>
-          <div
+          </div> */}
+{/*           <div
             onClick={() =>
               setButton({
                 ...button,
@@ -123,7 +127,7 @@ const Header = () => {
                 );
               })}
             </div>
-          </div>
+          </div> */}
           <div
             onClick={() =>
               setButton({
@@ -166,7 +170,7 @@ const Header = () => {
             Contacto
           </NavLink>
 
-        </nav> */}
+        </nav>
       </section>
     </header>
   );

@@ -15,6 +15,7 @@ import CardHome from "../Hero/CardHome.jsx";
 import CartPortfolio from "../Portfolio/CardPortfolio.jsx";
 import CardCatalogo from "../Catalogo/CardCatalogo.jsx";
 import { Fragment, useEffect } from "react";
+import LinkAmazon from "../LinkAmazon/LinkAmazon.jsx";
 
 const Home = () => {
 
@@ -80,10 +81,11 @@ const Home = () => {
         attachment={"fixed"}
         id={"inicio"}
       >
-        <CardHome>
+        <CardHome text={'Comparar en amazon'}>
           <h1 className="hero-image-title">
             Estaciones <br /> Meteorológicas
           </h1>
+          {/* <LinkAmazon link={"link"} text={""}/> */}
         </CardHome>
       </Hero>
 

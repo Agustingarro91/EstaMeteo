@@ -59,7 +59,7 @@ export const formu = [
   {
     type: "email",
     placeholder: "Ingresa tu correo *",
-    title: "Email incorrecto",
+    title: "Formato email",
     pattern: "^[a-z0-9]+(.[_a-z0-9]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,15})$",
     name: "user_email",
     required: true,
@@ -67,7 +67,8 @@ export const formu = [
     key: "2",
   },
   {
-    placeholder: "Déjame tus comentarios *",
+    placeholder: "Escribe aqui tus comentarios *",
+    title: "Escribe aqui tus comentarios",
     name: "message",
     required: true,
     input: "textarea",
@@ -81,6 +82,7 @@ export const formu = [
     input: "input",
     type: "submit",
     value: "ENVIAR MENSAJE",
+    title: "ENVIAR MENSAJE",
     key: "4",
     click: "{onClick(() => alert('hola'))}",
   },
@@ -238,14 +240,18 @@ export const tipos = [
 
  export const reseñas = [
   {reseña: "Froggit HP1000SE PRO Wi-Fi", link: "/froggit-hp-1000-se-pro-wifi"  }, 
-  {reseña: "MISOL HP2550 Wi-Fi", link: "/misol-hp-2550-wifi"}, 
+ /*  {reseña: "MISOL HP2550 Wi-Fi", link: "/misol-hp-2550-wifi"},  */
  ]
 
 
  export const opiniones = [
   {
-    opinion: <p>Opinion &#128525; </p>,
-    link: "/estamos yendo",
-    texto: "Dejame de joderrrr"
+    opinion: <p>Opinion 5/5 &#128525; </p>,
+    link: "https://amzn.to/3Vm6yfN",
+    texto: "Es un gran producto. Muy satisfecho. La pantalla buena calidad y diseño gráfico espectacular, multitud de añadir . . . Está bien diseñada. Tiene bastantes opciones para poder calibrar todo. Lo que no me gusta es"
+  }, {
+    opinion: <p> Opinion 4/5 &#129300; </p>,
+    link: "https://amzn.to/43p0jtE",
+    texto: "Está bien diseñada. Tiene bastantes opciones para poder calibrar todo. Lo que no me gusta es . . ."
   },
  ]

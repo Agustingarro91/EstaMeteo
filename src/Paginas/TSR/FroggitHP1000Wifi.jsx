@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Helmet } from "react-helmet";
 import { catalogo, cluster, opiniones } from "../../informacion";
 import HeaderArticle from "../../Components/HeaderArticle/HeaderArticle";
+import LinkAmazon from "../../Components/LinkAmazon/LinkAmazon";
 
 const FroggitHP1000Wifi = () => {
   return (
@@ -76,14 +77,12 @@ const FroggitHP1000Wifi = () => {
         <p className="item-d">
           La central meteorologica Froggit HP1000SE PRO surgio como una novedosa
           herramienta para la medicion climatica alla por el año 2019, pero al
-          pasar el tiempo se convirtio en la mas deseada por los fanaticos de
+          pasar el tiempo se convirtio en a mas deseada por los fanaticos de
           las centrales climatologicas debido a las impresionantes
           caracteristicas que tiene. ¿Quieres saber qué es lo que encanta a los
           usuarios? ¡Te desvelamos todos sus secretos!
         </p>
-{/*         <a href="" className="item-e btn amazon">
-          Ver ofertas Froggit HP1000SE PRO en Amazon
-        </a> */}
+        <LinkAmazon text={'Comprar Froggit HP1000SE PRO en Amazon'} link={"https://amzn.to/3PtJNTb" } clas={"item-e amazon"} />
       </HeaderArticle>
 
       <section  className="container caracteristicas">
@@ -181,7 +180,7 @@ const FroggitHP1000Wifi = () => {
         <h2 className="section-title">
           Conoce las Opiniones de Froggit HP1000SE PRO Wi-Fi
         </h2>
-        {/* {opiniones.map((opinion,i) => {
+        {opiniones.map((opinion,i) => {
 
           return(
         <aside key={i} className="caracteristicas-aside">
@@ -191,11 +190,11 @@ const FroggitHP1000Wifi = () => {
               <em> {opinion.texto} </em>
             </p>
           </blockquote>
-          <a href= {opinion.link} className="btn"> Ver en amazon</a>
+          <LinkAmazon text={'Ver en amazon'} link={opinion.link}  />
         </aside>
           )
-
-        })} */}
+        })}
+        <LinkAmazon text={'Ver en amazon todas las opiniones'} link={"https://amzn.to/3VrUvxs"} clas={"caracteristicas amazon"} />
       </section>
     </Fragment>
   );

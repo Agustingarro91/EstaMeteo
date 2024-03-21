@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- 3 -->
   <sitemap>
     <loc>https://estacionmeteorologica.top/</loc>
   </sitemap>
   <sitemap>
     <loc>https://estacionmeteorologica.top/#/froggit-hp-1000-se-pro-wifi</loc>
   </sitemap>
+    <sitemap>
+    <loc>https://estacionmeteorologica.top/#/contacto</loc>
+  </sitemap>
+
+  
 </sitemapindex>

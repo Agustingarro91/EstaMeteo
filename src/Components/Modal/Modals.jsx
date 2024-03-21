@@ -6,6 +6,7 @@ const Modals = () => {
   const [isOpenModal1, openModal1, closeModal1] = useModal(false);
   const [isOpenModal2, openModal2, closeModal2] = useModal(true);
   const [isOpenModal3, openModal3, closeModal3] = useModal(false);
+ 
 
   return (
     <section>
@@ -46,9 +47,15 @@ const Modals = () => {
           que se muestra el contenido. Sin esta las funciones básicas de
           navegación se verán perjudicadas, por eso deben estar siempre activas.
         </p>
+        <button disabled={true} >Siempre activas</button>
         <h3>Cookies de Terceros</h3>
-        <p>Esta web utiliza Google Analitycs tal como el numero de visitantes del sitio, o las paginas mas populares. <br />
+        <p>Esta web utiliza Google Analitycs para lograr medir, tal como el numero de visitantes del sitio, o las paginas mas populares. <br />
         Dejar esta cookie activa nos permite mejorar nuestra web</p>
+        <div>
+        <div className="btn" onClick={closeModal3} >Activar</div>
+        <div className="btn" onClick={closeModal3} >Desactivadas</div>
+        </div>
+
       </Modal>
     </section>
   );
